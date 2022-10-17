@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="26588" started-at="2022-10-17T16:51:50 IST" finished-at="2022-10-17T16:52:16 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="26588" started-at="2022-10-17T16:51:50 IST" finished-at="2022-10-17T16:52:16 IST">
+      <class name="cms.Testcase.AddCarriersTest">
+        <test-method status="PASS" signature="beforesuit()[pri:0, instance:cms.Testcase.AddCarriersTest@2eda0940]" name="beforesuit" is-config="true" duration-ms="59" started-at="2022-10-17T16:51:50 IST" finished-at="2022-10-17T16:51:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforesuit -->
+        <test-method status="PASS" signature="loadConfig()[pri:0, instance:cms.Testcase.AddCarriersTest@2eda0940]" name="loadConfig" is-config="true" duration-ms="0" started-at="2022-10-17T16:51:50 IST" finished-at="2022-10-17T16:51:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfig -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:cms.Testcase.AddCarriersTest@2eda0940]" name="setup" is-config="true" duration-ms="11478" started-at="2022-10-17T16:51:50 IST" finished-at="2022-10-17T16:52:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="logintest()[pri:1, instance:cms.Testcase.AddCarriersTest@2eda0940]" name="logintest" duration-ms="9295" started-at="2022-10-17T16:52:01 IST" finished-at="2022-10-17T16:52:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="addcarrier()[pri:2, instance:cms.Testcase.AddCarriersTest@2eda0940]" name="addcarrier" duration-ms="5782" started-at="2022-10-17T16:52:11 IST" finished-at="2022-10-17T16:52:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addcarrier -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:cms.Testcase.AddCarriersTest@2eda0940]" name="teardown" is-config="true" duration-ms="0" started-at="2022-10-17T16:52:16 IST" finished-at="2022-10-17T16:52:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- cms.Testcase.AddCarriersTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
