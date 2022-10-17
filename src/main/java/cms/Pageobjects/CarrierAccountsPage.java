@@ -37,8 +37,10 @@ public class CarrierAccountsPage extends BaseClass {
 		PageFactory.initElements(driver, this);
 	}
 
+	
 	public void AddNewCarrier() throws Throwable {
 		ActionsClass.Implicitwait();
+		Thread.sleep(3000);
 		ActionsClass.click(driver, CarrierAddButton);
 		
 	}

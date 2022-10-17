@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import cms.Actionclass.ActionsClass;
 import cms.Baseclass.BaseClass;
 
 /**
@@ -57,7 +58,16 @@ public class AddCarrierPage extends BaseClass {
 		PageFactory.initElements(driver, this);
 	}
 
-	
+	public void addcarrier() throws Throwable {
+		
+		ActionsClass.Implicitwait();
+		ActionsClass.type(Codetxt, "upsva123_g");
+		Thread.sleep(3000);
+		ActionsClass.selectByValue(SelectOrg, "31");
+		ActionsClass.type(AddDiscription, "upsva123");
+		
+		
+	}
 
 
 }

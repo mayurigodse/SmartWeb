@@ -34,12 +34,13 @@ public class CarrierAccountSearchCriteria extends BaseClass {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public CarrierAccountsPage clickCarrier() throws Throwable
+	public void clickCarrier() throws Throwable
 	{ 
 		ActionsClass.Implicitwait();
+		Thread.sleep(3000);
 		ActionsClass.click(driver, Okbuttoncarser);
 		
-		return new CarrierAccountsPage();
+	
 	}
 
 }

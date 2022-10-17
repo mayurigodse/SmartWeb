@@ -9,7 +9,9 @@ import org.testng.annotations.Test;
 
 import cms.Actionclass.ActionsClass;
 import cms.Baseclass.BaseClass;
+import cms.Pageobjects.AddCarrierPage;
 import cms.Pageobjects.CarrierAccountSearchCriteria;
+import cms.Pageobjects.CarrierAccountsPage;
 import cms.Pageobjects.IndexPage;
 import cms.Pageobjects.LoginPage;
 
@@ -50,6 +52,13 @@ IndexPage indexpage;
 		indexpage.Carriers();
 		CarrierAccountSearchCriteria caraccser=new CarrierAccountSearchCriteria();
 		caraccser.clickCarrier();
+		
+		CarrierAccountsPage carrieraccount= new CarrierAccountsPage();
+		carrieraccount.AddNewCarrier();
+		
+		AddCarrierPage addcarrier= new AddCarrierPage();
+		addcarrier.addcarrier();
+		
 		
 	}
 
