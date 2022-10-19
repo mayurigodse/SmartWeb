@@ -10,10 +10,12 @@ import org.testng.annotations.Test;
 import cms.Actionclass.ActionsClass;
 import cms.Baseclass.BaseClass;
 import cms.Pageobjects.AddCarrierPage;
+import cms.Pageobjects.AddShipVia;
 import cms.Pageobjects.CarrierAccountSearchCriteria;
 import cms.Pageobjects.CarrierAccountsPage;
 import cms.Pageobjects.IndexPage;
 import cms.Pageobjects.LoginPage;
+import cms.Pageobjects.ShipViasPage;
 
 /**
  * @author mayurig
@@ -22,6 +24,7 @@ import cms.Pageobjects.LoginPage;
 public class AddCarriersTest extends BaseClass{
 	
 IndexPage indexpage;
+CarrierAccountsPage carrieraccount;
 	
 	@BeforeClass
 	public void setup() {
@@ -53,12 +56,24 @@ IndexPage indexpage;
 		CarrierAccountSearchCriteria caraccser=new CarrierAccountSearchCriteria();
 		caraccser.clickCarrier();
 		
-		CarrierAccountsPage carrieraccount= new CarrierAccountsPage();
+		carrieraccount= new CarrierAccountsPage();
 		carrieraccount.AddNewCarrier();
 		
 		AddCarrierPage addcarrier= new AddCarrierPage();
 		addcarrier.addcarrier();
 		
+		
+	}
+	
+	@Test(priority=3)
+	public void addShhipVias() throws Throwable {
+		carrieraccount.clickshipvias();
+		
+		ShipViasPage clickaddship= new ShipViasPage();
+		clickaddship.addshipvia();
+		
+		AddShipVia addship= new AddShipVia();
+		addship.shipViaAdd();
 		
 	}
 

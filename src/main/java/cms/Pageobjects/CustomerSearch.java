@@ -1,4 +1,4 @@
-package cms.Pageobjects;
+ package cms.Pageobjects;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -45,8 +45,11 @@ public class CustomerSearch extends BaseClass {
 	}
 	
 	public void SelectCustomer() throws Throwable {
+		ActionsClass.Implicitwait();
 		ActionsClass.type(SearchFor, "cms");
+		Thread.sleep(3000);
 		ActionsClass.click(driver, OkButton);
+		Thread.sleep(3000);
 		ActionsClass.click(driver, AddressOk);
 	}
 	

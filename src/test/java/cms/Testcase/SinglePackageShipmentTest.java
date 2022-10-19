@@ -27,12 +27,12 @@ public class SinglePackageShipmentTest extends BaseClass {
 	
 	@Test(priority=1)
 	public void logintest() throws Throwable {
-		
+		  ActionsClass.Implicitwait();
 		indexpage=new IndexPage();
 		indexpage.LoginMenu();
 		
 		LoginPage loginpage=new LoginPage();
-	    ActionsClass.Implicitwait();
+	  
 		
 		loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
 		
@@ -44,7 +44,7 @@ public class SinglePackageShipmentTest extends BaseClass {
 		indexpage=new IndexPage();
 		indexpage.ProcessShip();
 		
-		Thread.sleep(3000);
+		
 		ProcessShipmentPage processship=new ProcessShipmentPage();
 		processship.singleProcessShip();
 		

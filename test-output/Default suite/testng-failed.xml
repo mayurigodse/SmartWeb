@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="cms.Testcase.AddCarriersTest">
+      <class name="cms.Testcase.MultipackageShipmentTest">
         <methods>
           <include name="beforesuit"/>
-          <include name="addcarrier"/>
-          <include name="setup"/>
+          <include name="singlepackship"/>
           <include name="loadConfig"/>
           <include name="teardown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- cms.Testcase.AddCarriersTest -->
+      </class> <!-- cms.Testcase.MultipackageShipmentTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

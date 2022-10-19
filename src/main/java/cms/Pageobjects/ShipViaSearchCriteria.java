@@ -13,8 +13,8 @@ public class ShipViaSearchCriteria extends BaseClass {
 	@FindBy(id="txtSCSearchSS")
 	WebElement SearchFor;
 	
-	@FindBy(id="txtSCSearchSS")
-	WebElement btnSearchOk_PS;
+	@FindBy(id="btnSearchOk_PS")
+	WebElement searchok;
 	
 	@FindBy(id="ShipviasSearchResultFormOk")
 	WebElement okSearchResult;
@@ -32,9 +32,9 @@ public class ShipViaSearchCriteria extends BaseClass {
 		 
 		ActionsClass.Implicitwait();
 		ActionsClass.type(SearchFor, s );
-		Thread.sleep(10000);
-		ActionsClass.click(driver, btnSearchOk_PS);
 		Thread.sleep(3000);
+		ActionsClass.click(driver, searchok);
+		Thread.sleep(5000);
 		ActionsClass.click(driver, okSearchResult);
 		
 	}

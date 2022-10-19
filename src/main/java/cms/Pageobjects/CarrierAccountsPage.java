@@ -25,6 +25,9 @@ public class CarrierAccountsPage extends BaseClass {
 	@FindBy(id="CADeletebutton")
 	WebElement  CarrierDelete;
 	
+	@FindBy(id="CAShipViaButton")
+	WebElement  ShipviaButton;
+	
 	/*
 	@FindBy(id="")
 	WebElement  ;
@@ -43,5 +46,12 @@ public class CarrierAccountsPage extends BaseClass {
 		Thread.sleep(3000);
 		ActionsClass.click(driver, CarrierAddButton);
 		
+	}
+	
+	public void clickshipvias() throws Throwable {
+		Thread.sleep(3000);
+		ActionsClass.Implicitwait();
+		
+		ActionsClass.click(driver, ShipviaButton);
 	}
 }

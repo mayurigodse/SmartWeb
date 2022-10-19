@@ -34,10 +34,10 @@ public class AddCarrierPage extends BaseClass {
 	@FindBy(xpath="//button[@onclick=\"CAF_OkClick()\"]")
 	WebElement  OkCarraddbutton;
 	
-	/*
-	@FindBy(id="")
-	WebElement  ;
+	@FindBy(id="CAF_txtShipperCode")
+	WebElement AddShippercode ;
 	
+	/*
 	@FindBy(id="")
 	WebElement  ;
 	
@@ -65,6 +65,13 @@ public class AddCarrierPage extends BaseClass {
 		Thread.sleep(3000);
 		ActionsClass.selectByValue(SelectOrg, "31");
 		ActionsClass.type(AddDiscription, "upsva123");
+		ActionsClass.type(AddAccount, "123456");
+		ActionsClass.type(AddShippercode, "CMSVA");
+		Thread.sleep(3000);
+		ActionsClass.selectByValue(SelectOriginType, "UPS_US");
+		ActionsClass.click(driver, OkCarraddbutton);
+		
+		
 		
 		
 	}
