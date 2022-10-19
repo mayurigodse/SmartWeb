@@ -63,13 +63,12 @@ public class ProcessShipmentPage extends BaseClass {
 		
 		ActionsClass.Implicitwait();
 				
-		Thread.sleep(7000);	
+		Thread.sleep(15000);	
 		ActionsClass.click(driver, ShipViaSearch);
-		
-	
 		ShipViaSearchCriteria shipviasercri=new ShipViaSearchCriteria();
 		shipviasercri.searchshipvia();
 		
+		Thread.sleep(3000);
 		ActionsClass.click(driver, CustomerSelect);
 		CustomerSearch customerser=new CustomerSearch();
 		customerser.SelectCustomer();
@@ -111,6 +110,10 @@ public class ProcessShipmentPage extends BaseClass {
 		
 		
 		ActionsClass.click(driver, bShipButton);
+		
+	}
+	
+	public void internationalShipment() {
 		
 	}
 	
