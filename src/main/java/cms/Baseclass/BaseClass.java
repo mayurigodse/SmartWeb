@@ -48,28 +48,33 @@ public void beforesuit() {
 	
 	public static void launchapp()
 	{
+		//System.setProperty("webdriver.gecko.driver", "E:\\geckodriver-v0.32.0-win32\\geckodriver.exe");
 		
-		WebDriverManager.firefoxdriver().setup();
 		String Browsername= prop.getProperty("browser");
 		
+		
 		if(Browsername.contains("Firefox")) {
+			WebDriverManager.firefoxdriver().setup();
 			driver=new FirefoxDriver();
+
 		}else if(Browsername.contains("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
 		}else if(Browsername.contains("EdgeDriver")) {
+			WebDriverManager.edgedriver().setup();
 			driver= new EdgeDriver();
 		}
-		
+
+	
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
-		
+	
 		
 	}
 	
 	
 	
 
-	
 }
+
